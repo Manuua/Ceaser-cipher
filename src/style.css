@@ -14,95 +14,72 @@
     margin: 0px;
     padding: 0px;
 }
-
 body{
-    background: var(--purple-bg);
-   
+    background: var(--purple-bg);  
 }
 header{
-    background-image:linear-gradient(to bottom, var(--light-purple),var(--dark-bg));
-    min-height: 150px;
-    text-align: center;
-    padding: 40px;
-}
-#root{
-    position: absolute;
-    text-align: center;
-    width: 161.14px;
-    height: 36.54px;
-    left: 700px;
-    top: 250px;
-    font-family: 'Oswald', sans-serif; 
-    font-size:xx-large;
-    color:rgb(153, 112, 201);
-    
-}
-
-#description{
-    
-    color: aliceblue;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    
-}
-#imagem {
-width: 570px;
-height: 346px;
-top: 350px;
-background: rgba(0, 0, 0, 0.1);
-mix-blend-mode: overlay;
-border-radius: 8px;
+background-image:linear-gradient(to bottom, var(--light-purple),var(--dark-bg));
 min-height: 150px;
-background: rgba(0, 0, 0, 0.1);
-mix-blend-mode: overlay;
-border-radius: 8px;
+text-align: center;
+padding: 40px;
 }
+#displayFlex{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+    #root{
+        text-align: center;
+        font-family: 'Oswald', sans-serif; 
+        font-size:xx-large;
+        color:rgb(153, 112, 201);  
+    }
+    #description{
+        color: aliceblue;
+        font-size: 18px;  
+    }
+    #imagem {
+        width: 50%;
+        background: rgba(0, 0, 0, 0.1);
+        mix-blend-mode: overlay;
+        border-radius: 8px;
+        display: block;
+        margin: 0 auto ;
 
-
+    }
 #input{
-    width: 600px;
-    height: 50px;
-    margin-top: 150px;
-    margin-left: 350px; 
-    border:  4px solid var(--button-bg);
-    border-radius: 5px;
-    outline: none;
-    resize: none;
-    overflow: hidden;
-    background-color: var(--light-purple);
-    font-family: 'Press Start 2P';
-    text-transform: uppercase;
-    
+width: 600px;
+height: 50px; 
+border:  4px solid var(--button-bg);
+border-radius: 5px;
+outline: none;
+resize: none;
+overflow: hidden;
+background-color: var(--light-purple);
+font-family: 'Press Start 2P';
+text-transform: uppercase;  
+display: block;
+margin: 0 auto ;
 }
 #button{
-    margin-left : 550px;
+border-radius: 8px;
+line-height: 0;
+display: flex;
 }
-#button1{
-  width: 8rem;
-  height: 3rem ;
-  border-radius: 8px;
-  display: inline;
-  line-height: 0;
-  margin-left : 500px;
-  margin-top: 10px;
-  background-color: var(--button-bg);
-
-}
-
-
-#button2 {
+    #button1{
     width: 8rem;
     height: 3rem ;
-    border-radius: 8px;
-    display: inline;
-    line-height: 0;
     background-color: var(--button-bg);
-  
-  }
-  #resultPrincipal{
-    color: var(--light-purple);
-    font-family: 'Press Start 2P';
-    margin-top : 50px;
-  
-  }
+   
+    }
+    #button2 {
+    width: 8rem;
+    height: 3rem ; 
+    background-color: var(--button-bg);
+    }
+
+#resultPrincipal{
+color: var(--light-purple);
+font-family: 'Press Start 2P';
+margin-top : 50px;
+}
