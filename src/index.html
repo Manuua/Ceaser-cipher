@@ -2,13 +2,35 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Cesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header> 
+      <h1> Cifra de Cesar</h1>
+      <p> A Cifra de César é uma técnica de criptografia</p>
+    </header> 
     <div id="root">
-      <h1>Hello world!</h1>
+       <h3 class="name" id="name--0">Comunicação Cifrada </h3>
+       <p class= "description--0 "id="description"> Essa página tem como objetivo facilitar a comunicação em situações que podem exigir sigilo.</p>
     </div>
+    
+    <div> 
+      <img class ="codeImage" id="imagem" src="imagen/codigo.png" alt="imagem de tela de códigos" >
+    </div>
+
+    <section> 
+        <div class= "boxText" id="textInput">  
+           <textarea class= "input--0 "id="input" rows="10" cols="50" ></textarea>
+        </div>
+        <div id="botton" > 
+          <button class= "CriptButton"id="button1" > Criptografar </button>
+          <button class="DescriptButton" id="button2" > Descriptografar </button>
+        </div>
+
+        <div id="resultPrincipal"></div>  
+    </section>
+  
     <script src="index.js" type="module"></script>
   </body>
 </html>
