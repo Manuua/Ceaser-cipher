@@ -28,13 +28,25 @@ window.onload = () => {
     })
 };
 
+function ClearTextArea() {
+    textArea.value= ""; 
+  }
+  
+function answer(solution){
+    document.getElementById('resultPrincipal').innerHTML = `
+    <p>Sua mensagem é : ${solution}</p>`
+}
+
 btnToCript.addEventListener('click', function (){
     const text = textArea.value.toUpperCase()
-    cifra(text)
-
-}) 
+    const solution = cifra(text) ;
+    answer(solution);
+    ClearTextArea();
+});
 
  btnToDescript.addEventListener('click' , function() {
     const text = textArea.value.toUpperCase()
-    cifra(text)    
- })
+    const solution = cifra(text) ;
+    answer(solution);    
+    ClearTextArea();
+ });

@@ -64,22 +64,28 @@ margin: 0 auto ;
 #button{
 border-radius: 8px;
 line-height: 0;
-display: flex;
+margin: 0 auto;
+text-align: center;
+padding-top: 1em;
+
 }
     #button1{
     width: 8rem;
     height: 3rem ;
     background-color: var(--button-bg);
+    display: inline-block;
    
     }
     #button2 {
     width: 8rem;
     height: 3rem ; 
     background-color: var(--button-bg);
+    display: inline-block;
     }
 
 #resultPrincipal{
 color: var(--light-purple);
 font-family: 'Press Start 2P';
 margin-top : 50px;
+text-align: center;
 }
